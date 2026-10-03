@@ -1,8 +1,18 @@
+IO.warn(
+  """
+  phoenix_pubsub_buffered / distributed_pubsub is ARCHIVED and UNMAINTAINED.
+  The repository is read-only and will be removed by 2026-12-31.
+  Use echo_pubsub instead: {:echo_pubsub, "~> 0.1.4"}
+  https://github.com/LKlemens/echo_pubsub
+  """,
+  []
+)
+
 defmodule PhoenixPubSubBuffered.MixProject do
   use Mix.Project
 
   @source_url "https://github.com/enewbury/phoenix_pubsub_buffered"
-  @version "0.1.1"
+  @version "0.1.2"
 
   def project do
     [

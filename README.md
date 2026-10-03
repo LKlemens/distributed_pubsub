@@ -4,6 +4,11 @@
 [![hex.pm version](https://img.shields.io/hexpm/v/phoenix_pubsub_buffered.svg)](https://hex.pm/packages/phoenix_pubsub_buffered)
 [![hex.pm license](https://img.shields.io/hexpm/l/phoenix_pubsub_buffered.svg)](https://github.com/enewbury/phoenix_pubsub_buffered/blob/main/LICENSE)
 
+> ## ARCHIVED - moved to [echo_pubsub](https://github.com/LKlemens/echo_pubsub)
+>
+> This repository is **archived and unmaintained**. It is read-only and will be
+> **removed by 2026-12-31**.
+
 A Phoenix.PubSub adapter that distributes messages between nodes using the erlang `:pg` module, like the default adapter, however with the additional guarentees of "at least once" delivery. 
 
 This means that you can have nodes dissconnect temporarily from the cluster, and then "catch up" when they rejoin by maintaining a buffer of messages, and read cursors.
